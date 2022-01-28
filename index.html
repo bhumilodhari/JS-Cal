@@ -33,7 +33,7 @@
           <td onclick="memorySave()">MS</td>
         </tr>
 
-        <tr class="rowcal4">
+          <tr class="rowcal4">
             <td colspan="2" class="dropdown">
               <div class="trigonometry dropdown-btn">
                 <span class="span1">&#x22BF;</span>&nbsp;
@@ -42,7 +42,7 @@
               </div>
   
               <div class="dropdown-box" id="dropdown-box">
-                <div data-value="sine" onclick="trigonometry('sine')">sine</div>
+                <div data-value="sine" onclick="trigonometry('sin')">sin</div>
                 <div data-value="cos" onclick="trigonometry('cos')">cos</div>
                 <div data-value="tan" onclick="trigonometry('tan')">tan</div>
                 <div data-value="cot" onclick="trigonometry('cot')">cot</div>
@@ -58,6 +58,7 @@
                 <i class="material-icons">expand_more</i>
               </div>
               <div class="dropdown-box" id="dropdown-box">
+                <div data-value="round" onclick="mathFunction('round')">Round</div>
                 <div data-value="ceil" onclick="mathFunction('ceil')">Ceil</div>
                 <div data-value="floor" onclick="mathFunction('floor')">Floor</div>
                 <div data-value="trunc" onclick="mathFunction('trunc')">Trunc</div>
@@ -82,21 +83,21 @@
           </tr>
   
           <tr class="rowcal6">
-            <td data-value="^2" onclick="calc_square()">
+            <td data-value="^2" onclick="cal_square()">
               <span>x<sup>2</sup></span>
             </td>
             <td data-value="1/" onclick="addChar(this)">
               <span>1/x</span>
             </td>
-            <td data-value="" onclick="calc_absolute()">
+            <td data-value="" onclick="cal_absolute()">
               <span>| x |</span>
             </td>
-            <td onclick="calc_exp()">exp</td>
+            <td onclick="cal_exp()">exp</td>
             <td data-value="%" onclick="addChar(this)">mod</td>
           </tr>
   
           <tr class="rowcal7">
-            <td data-value="√" onclick="calc_sqrt()">
+            <td data-value="√" onclick="cal_sqrt()">
               <span title="square_root">&#8730;x</span>
             </td>
             <td data-value="(" onclick="addChar(this)">
@@ -105,7 +106,7 @@
             <td data-value=")" onclick="addChar(this)">
               <span>)</span>
             </td>
-            <td data-value="!" onclick="calc_factorial()">
+            <td data-value="!" onclick="cal_factorial()">
               <span>n!</span>
             </td>
             <td data-value="/" onclick="addChar(this)">
@@ -132,7 +133,7 @@
           </tr>
   
           <tr class="rowcal9">
-            <td data-value="10^" onclick="calc_ten_pow()">
+            <td data-value="10^" onclick="cal_ten_pow()">
               <span >10<sup>x</sup></span>
             </td>
             <td data-value="4" onclick="addChar(this)">
@@ -150,7 +151,7 @@
           </tr>
   
           <tr class="rowcal10">
-            <td data-value="log" onclick="calc_log()">
+            <td data-value="log" onclick="cal_log()">
               <span>log</span>
             </td>
             <td data-value="1" onclick="addChar(this)">
@@ -168,7 +169,7 @@
           </tr>
   
           <tr class="rowcal11">
-            <td data-value="ln" onclick="calc_ln()">
+            <td data-value="ln" onclick="cal_ln()">
               <span>ln</span>
             </td>
             <td data-value="&#177;" onclick="plusorMinus(this)">
