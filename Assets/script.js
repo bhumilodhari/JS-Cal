@@ -1,9 +1,9 @@
 let calculationDiv = document.getElementById("calculation-div");
   
 /* convert given string into comma seperated value
-formateNumberWithComm(inputString)
+formateNumberWithComma(inputString)
 @param {string} inputString :- which is in normal form
-@return {string} outputString :- comma seperated value of given string usign regex
+@return {string} outputString :- comma seperated value of given string usind regex
 */
   function formatNumbersWithComma(input) {
     return input.replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
@@ -11,8 +11,7 @@ formateNumberWithComm(inputString)
 
 /* generate maths eqution to eval.  
 addChar(element : html-element)
-@param {html-element} element :- it is a value assoiated with button
-*/
+@param {html-element} element :- it is a value assoiated with button */
   function addChar(element) {
     let char = element.getAttribute("data-value");
     let currentValue = calculationDiv.innerText.replace(/ /g, "");
@@ -145,8 +144,8 @@ fixed value with exponent values */
 convert given radiad value into degree */
   function radianToDegree() {
     let calValue = Number(calculationDiv.innerText.replace(/ /g, ''));
-    operationValue = operationValue * (180 / Math.PI);
-    operationDiv.innerText = formatNumbersWithComma(operationValue.toString());
+    calValue = calValue * (180 / Math.PI);
+    calculationDiv.innerText = formatNumbersWithComma(calValue.toString());
   }
 
 /* calc_factorial()
@@ -183,7 +182,7 @@ calculate the logerithmic value base e and display result */
   }
  
 
-// MC, MR, M+, M-, MS funtionality
+// MC, MR, M+, M-, MS Memory functions
  let memoryValue = 0; // memoryvalue is a memory  which store the memory value
  let memoryStatus = 0; // memorystatus flag is used whether memory is present or not
 
