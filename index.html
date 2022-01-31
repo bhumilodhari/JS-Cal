@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scientific Calculator</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link rel="stylesheet" href="./Assets/main.css" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link rel="shortcut icon" href="./assets/images/images.jpeg" type="jpeg">
   </head>
   <body>  
 
@@ -22,7 +23,7 @@
         
         <tr class="rowcal2">
           <td onclick="radianToDegree()">DEG</td>
-          <td onclick="fixed_exp()">F-E</td>
+          <td onclick="fixedExp()">F-E</td>
         </tr>
         
         <tr class="rowcal3">
@@ -42,7 +43,7 @@
               </div>
   
               <div class="dropdown-box" id="dropdown-box">
-                <div data-value="sine" onclick="trigonometry('sin')">sin</div>
+                <div data-value="sin" onclick="trigonometry('sin')">sin</div>
                 <div data-value="cos" onclick="trigonometry('cos')">cos</div>
                 <div data-value="tan" onclick="trigonometry('tan')">tan</div>
                 <div data-value="cot" onclick="trigonometry('cot')">cot</div>
@@ -77,7 +78,7 @@
             <td data-value="clear" onclick="clearScreen()">
               <span>C</span>
             </td>
-            <td data-value="backspace" onclick="backspace()">
+            <td data-value="backspace" onclick="backSpace()">
               <i class="material-icons" id="backspace">backspace</i>
             </td>
           </tr>
@@ -188,6 +189,6 @@
 
       </table>
     </div>
-    <script src="./Assets/script.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>

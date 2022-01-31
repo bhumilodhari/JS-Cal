@@ -9,3 +9,4 @@ On this application it's perform different type of calculations.
 -They have many extra fuctions like exponent(e),clear(C),PI, absolute, 1/x ,plus/minus, and .(dot) 
 -Square fuctions like squareroot and square and ten paw.
 -In basic math functions includes floor,ceil,round and trunc.
+
